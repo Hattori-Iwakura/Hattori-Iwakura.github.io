@@ -1009,7 +1009,12 @@ table {
 	margin-top: 0.5em;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 968px) {
+	.btn {
+		padding: 12px 28px;
+		font-size: 0.95em;
+	}
+
 	.certificate-grid {
 		grid-template-columns: 1fr;
 	}
@@ -1026,6 +1031,82 @@ table {
 		padding: 3em 1.5em;
 		max-width: 100%;
 		margin: 1em 0;
+	}
+
+	.badge {
+		font-size: 0.85em;
+		padding: 6px 14px;
+	}
+
+	.stat-number {
+		font-size: 2.5em;
+	}
+}
+
+@media (max-width: 640px) {
+	.btn {
+		padding: 11px 24px;
+		font-size: 0.9em;
+		letter-spacing: 0.01em;
+	}
+
+	.btn:hover {
+		transform: translateY(-2px);
+	}
+
+	.grid {
+		gap: 1.5em;
+	}
+
+	.hero-section {
+		padding: 2em 1em;
+	}
+
+	.badge {
+		font-size: 0.8em;
+		padding: 5px 12px;
+		margin: 3px;
+	}
+
+	.stat-number {
+		font-size: 2em;
+	}
+
+	.stat-label {
+		font-size: 0.9em;
+	}
+
+	.certificate-card img {
+		max-height: 220px;
+		object-fit: cover;
+	}
+}
+
+@media (max-width: 480px) {
+	.btn {
+		padding: 10px 20px;
+		font-size: 0.85em;
+	}
+
+	.section {
+		margin: 3em 0;
+	}
+
+	.grid {
+		gap: 1.2em;
+	}
+
+	.badge {
+		font-size: 0.75em;
+		padding: 4px 10px;
+	}
+
+	.stat-number {
+		font-size: 1.8em;
+	}
+
+	.certificate-card img {
+		max-height: 200px;
 	}
 }
 

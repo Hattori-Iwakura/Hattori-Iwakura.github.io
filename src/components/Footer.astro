@@ -7,10 +7,11 @@ const today = new Date();
 	<div class="footer-content">
 		<div class="footer-section">
 			<h3>{AUTHOR_NAME}</h3>
-			<p>Aspiring AI Engineer & Fullstack Developer</p>
+			<p>Software Engineering Student | Learning AI & Full-Stack</p>
 			<p style="font-size: 0.9em; margin-top: 1em;">
-				Building intelligent systems with Deep Learning, Computer
-				Vision, and modern web technologies
+				A final-year student passionate about AI/Machine Learning and
+				Full-Stack Development. Building intelligent applications and
+				exploring modern web technologies.
 			</p>
 		</div>
 
@@ -177,12 +178,51 @@ const today = new Date();
 
 	@media (max-width: 768px) {
 		footer {
-			padding: 3em 1em 2em;
+			padding: 3em 1.5em 2em;
 		}
 
 		.footer-content {
 			grid-template-columns: 1fr;
+			gap: 2.5em;
+		}
+
+		.footer-section h3 {
+			font-size: 1.3em;
+		}
+
+		.footer-section h4 {
+			font-size: 1.1em;
+		}
+	}
+
+	@media (max-width: 480px) {
+		footer {
+			padding: 2.5em 1em 1.5em;
+		}
+
+		.footer-content {
 			gap: 2em;
+		}
+
+		.footer-section h3 {
+			font-size: 1.2em;
+		}
+
+		.footer-section p {
+			font-size: 0.9em;
+		}
+
+		.social-links {
+			gap: 1.2em;
+		}
+
+		.social-links a svg {
+			width: 24px;
+			height: 24px;
+		}
+
+		.footer-bottom {
+			font-size: 0.9em;
 		}
 	}
 </style>
